@@ -1,5 +1,4 @@
-//  Pointers: dereferencing pointers 
-// instead of pointing to memory loc, point to description (storage)
+// Classes & Objects: 
 
 #include <iostream>
 
