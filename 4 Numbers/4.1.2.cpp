@@ -12,7 +12,7 @@ int main()
     
     wnum++;     // Increment wnum by 1
     
-    wnum += 80  // Increment wnum by 80
+    wnum += 80;  // Increment wnum by 80
     
     cout << wnum << endl;
 
