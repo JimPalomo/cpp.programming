@@ -1,4 +1,4 @@
-//  Pointers
+//  Pointers: pointer variables
 
 #include <iostream>
 
