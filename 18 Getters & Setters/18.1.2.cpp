@@ -1,4 +1,4 @@
-// Getters & Setters:
+// Getters & Setters: Private
 // Allows to set up limitations or rules to variables
 
 #include <iostream>
