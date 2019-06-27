@@ -21,6 +21,7 @@ class Movie{
             setRating(aRating); // Passes to setRating function
         }
   
+        // Function that limits user inputting code
         void setRating(string aRating) {
             
             // Setting up rules to what the user can input as a rating
