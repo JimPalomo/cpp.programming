@@ -17,7 +17,5 @@ int main() {
 
     cout << fishPointer << endl;
 
-
-
-
+    return 0;
 } 
