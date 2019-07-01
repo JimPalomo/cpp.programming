@@ -1,7 +1,6 @@
 // Object-Oriented Programming: Pointers
 
 #include <iostream>
-
 using namespace std;
 
 int main() {
