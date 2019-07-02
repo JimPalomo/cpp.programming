@@ -2,10 +2,11 @@
 #include "Sally.h"
 using namespace std;
 
-Sally::Sally() {
-    cout << "I am the constructor" << endl;
-}
+// Member initialization list in a constructor
+// Whenever there is a constant variable in the class, we use member initialization list
+Sally::Sally(int a, int b) 
+: regVar(a), constVar(b) {}
 
-Sally::~Sally() {
-    cout << "I am the deconstructor" << endl;
+void Sally::print() {
+    cout << "regular var is: " << regVar << " const variable is: " << constVar << endl;
 }

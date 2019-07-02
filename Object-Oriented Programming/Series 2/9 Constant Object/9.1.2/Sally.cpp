@@ -10,5 +10,5 @@ void Sally::printShiz() {
 }
 
 void Sally::printShiz2() const {
-    cout << "I am the constant function";
+    cout << "I am the constant function" << endl;
 }

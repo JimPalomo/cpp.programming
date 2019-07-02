@@ -3,13 +3,11 @@
 
 class Sally {
     public: 
-        // Function
-        Sally();
-        
-        // Deconstructor (contains "~")
-        ~Sally();
-    protected:
+        Sally(int a, int b);
+        void print();
     private:
+        int regVar;
+        const int constVar;
 
 };
 

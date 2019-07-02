@@ -6,9 +6,8 @@ using namespace std;
 
 int main() {
 
-    Sally so;
-    cout << "What is this on my shoes?" << endl;
-
+    Sally so(3, 87);
+    so.print();
     
     return 0;
 } 
