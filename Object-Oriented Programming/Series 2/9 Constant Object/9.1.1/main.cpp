@@ -8,7 +8,7 @@ int main() {
     
     // Can't change a constant variable
     const int x = 3;
-    x =5;
+    // x = 5;
 
     
     return 0;
