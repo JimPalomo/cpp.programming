@@ -161,11 +161,20 @@ int main() {
 
 
 
-    cout << "-----------End of first linked-list, new set below--------------\n" << endl;
 
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+    cout << "\n\n-----------End of first linked-list, new set below--------------\n\n\n" << endl;
+
     // Reversing a linked-list
     cout << "Reversing a linked list" << endl;
 
