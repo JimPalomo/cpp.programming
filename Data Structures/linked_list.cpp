@@ -1,4 +1,4 @@
-// Creating a linked list 
+// Creating a linked-list 
 
 #include <iostream>
 using namespace std;
@@ -20,7 +20,7 @@ class list {
             tail = NULL;
         }
 
-    // Creating a function to create nodes for the linked list
+    // Creating a function to create nodes (adds nodes sequentially)
     void createnode(int value) {
         node *temp = new node;
         temp->data = value;
@@ -38,7 +38,7 @@ class list {
         }
     }
 
-    // Function to display the linked list
+    // Function to traverse the linked list
     void display() {
         node *temp = new node;
         temp = head;
@@ -113,8 +113,69 @@ class list {
 
 int main() {
     list obj;
-    obj.createnode(5);  // Create node with data of int 5
+
+    // Creating nodes
+    cout << "Creating nodes" << endl;
+    obj.createnode(2);
+    obj.createnode(4);
+    obj.createnode(6);
+    obj.createnode(5);
+    
     obj.display();
+    cout << endl << endl;
+
+    // Inserting a node at the beginning
+    cout << "Inserting a node at the start" << endl;
+    obj.insert_start(7);
+
+    obj.display();
+    cout << endl << endl;
+
+    // Inserting a node at nth position
+    cout << "Inserting a node at nth (2nd in this case) position" << endl;
+    obj.insert_position(2,22);
+
+    obj.display();
+    cout << endl << endl;
+
+    // Deleting first node
+    cout << "Deleting first node" << endl;
+    obj.delete_first();
+
+    obj.display();
+    cout << endl << endl;
+
+    // Deleting last node
+    cout << "Deleting last node" << endl;
+    obj.delete_last();
+
+    obj.display();
+    cout << endl << endl;
+
+    // Deleting node at nth position
+    cout << "Deleting node at nth (3rd in this case) position" << endl;
+    obj.delete_position(3);
+
+    obj.display();
+    cout << endl << endl;
+
+
+
+    cout << "-----------End of first linked-list, new set below--------------\n" << endl;
+
+    
+    
+    
+    // Reversing a linked-list
+    cout << "Reversing a linked list" << endl;
+
+    list obj2;
+    obj2.createnode(2);
+    obj2.createnode(4);
+    obj2.createnode(6);
+    obj2.createnode(5);
+
+    obj2.display();
 
     return 0;
 }
