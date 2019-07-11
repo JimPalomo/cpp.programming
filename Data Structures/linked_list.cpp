@@ -46,6 +46,7 @@ class list {
             cout << temp->data << "\t";
             temp = temp->next;
         }
+        cout << endl << endl;
     }
 
     // Function to insert a node at the start
@@ -109,6 +110,31 @@ class list {
         previous->next = current->next;
     }
 
+    // Reversing linked list iteratively
+    void iReverse() {
+        node *curr = head;
+        node *prev = NULL;
+        node *next = NULL;
+
+        while(curr != NULL) {
+            next = curr->next;
+            curr->next = prev;  // curr->next is the same as *(curr).next (aka the address field of the node)
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+    }
+
+    // Reversing linked-list recursively -- Fixing
+    void rReverse(node *prev, node *cur) {
+        if(cur) {
+            rReverse(cur,cur->next);
+            cur->next = prev;
+        } else{
+                head = prev;
+        }
+    }
+
 };
 
 int main() {
@@ -122,67 +148,61 @@ int main() {
     obj.createnode(5);
     
     obj.display();
-    cout << endl << endl;
 
     // Inserting a node at the beginning
     cout << "Inserting a node at the start" << endl;
     obj.insert_start(7);
 
     obj.display();
-    cout << endl << endl;
 
     // Inserting a node at nth position
     cout << "Inserting a node at nth (2nd in this case) position" << endl;
     obj.insert_position(2,22);
 
     obj.display();
-    cout << endl << endl;
 
     // Deleting first node
     cout << "Deleting first node" << endl;
     obj.delete_first();
 
     obj.display();
-    cout << endl << endl;
 
     // Deleting last node
     cout << "Deleting last node" << endl;
     obj.delete_last();
 
     obj.display();
-    cout << endl << endl;
 
     // Deleting node at nth position
     cout << "Deleting node at nth (3rd in this case) position" << endl;
     obj.delete_position(3);
 
     obj.display();
-    cout << endl << endl;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // Transition cut off
     cout << "\n\n-----------End of first linked-list, new set below--------------\n\n\n" << endl;
 
-    // Reversing a linked-list
-    cout << "Reversing a linked list" << endl;
+    // Creating a new list
+    cout << "Creating a linked-list" << endl;
 
     list obj2;
     obj2.createnode(2);
     obj2.createnode(4);
     obj2.createnode(6);
     obj2.createnode(5);
+
+    obj2.display();
+
+    // Reversing a linked-list iteratively
+    cout << "Reversing a linked list iteratively" << endl;
+    obj2.iReverse();
+
+    obj2.display();
+
+    // Reversing a linked-list recursively -- Fixing
+    cout << "Reversing a linked-list recursively" << endl;
+    node* cur = new node;
+    obj2.rReverse(cur,cur->next);
 
     obj2.display();
 
