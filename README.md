@@ -2,5 +2,6 @@
 
 
 Notable Resources: 
-  freeCodeCamp
-  Thenewboston
+  1. freeCodeCamp
+  2. Thenewboston
+  3. programminghelporg
