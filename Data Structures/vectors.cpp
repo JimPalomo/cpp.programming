@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void printVector(vector<int> vector) {
+void printVector(vector<int>& vector) {     // Pass by reference (&) to save memory
     cout << "Vector: ";
 
     for (unsigned int i = 0; i < vector.size(); i++) {
