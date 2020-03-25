@@ -19,7 +19,7 @@ int main()
     cout<<"There once was a man named " << characterName << endl;      // endl is a newline(\n in C or python)
     cout<<"He was "<< characterAge <<" years old" << endl;
     
-    characterName = "Mike"
+    characterName = "Mike";
     
     cout<<"He liked the name " << characterName << endl;
     cout<<"But did not like being " << characterAge << endl;
